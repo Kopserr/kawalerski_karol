@@ -2,7 +2,42 @@
   "permissions": {
     "allow": [
       "Bash(npm -v)",
-      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --app --src-dir --import-alias \"@/*\" --eslint --no-turbopack --use-npm)"
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --app --src-dir --import-alias \"@/*\" --eslint --no-turbopack --use-npm)",
+      "Bash(npm install *)",
+      "Bash(npm view *)",
+      "Bash(npm audit *)",
+      "Bash(npm ls *)",
+      "Bash(npx --yes shadcn@latest init -d -b neutral)",
+      "Bash(npx --yes shadcn@latest init -d)",
+      "Bash(npx --yes shadcn@latest add badge progress dialog separator)",
+      "Bash(rm -rf src/components/ui components.json)",
+      "Bash(npx --yes shadcn@latest init -d -b radix)",
+      "Bash(npx --yes shadcn@latest add badge progress dialog separator label)",
+      "Bash(node scripts/generate-icons.mjs)",
+      "Bash(npx tsc *)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(npm run *)",
+      "Bash(tail -80 /tmp/lfd-dev.log)",
+      "Read(//private/tmp/**)",
+      "Bash(kill %1)",
+      "Bash(pkill -f \"next dev -p 3411\")",
+      "Bash(lsof -ti:3411 -sTCP:LISTEN)",
+      "Bash(xargs -r kill)",
+      "Bash(disown)",
+      "Bash(timeout 30 bash -c 'until curl -sf http://localhost:3411 >/dev/null; do sleep 1; done')",
+      "Bash(curl -s -o /dev/null -w \"board:%{http_code}\\\\n\" http://localhost:3411/board)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(npx --yes playwright install chromium)",
+      "Bash(node /tmp/lfd-shots/shot.mjs)",
+      "Read(//tmp/lfd-shots/**)",
+      "Read(//private/tmp/lfd-shots/**)",
+      "Bash(docker info *)",
+      "Bash(npx --yes supabase --version)",
+      "Bash(curl -sf http://localhost:3411)",
+      "Bash(break)",
+      "Bash(python3 -c ' *)",
+      "Bash(node .tmp-3d-test.mjs)",
+      "Bash(rm -rf /tmp/lfd-shots /tmp/lfd-dev6.log /tmp/test-proof.png)"
     ]
   }
 }
